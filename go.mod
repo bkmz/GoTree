@@ -1,3 +1,3 @@
-module github.com/disiqueira/gotree/v3
+module github.com/bkmz/gotree/
 
 go 1.13
