@@ -38,7 +38,7 @@ type (
 )
 
 //New returns a new GoTree.Tree
-func New(text string, size int) Tree {
+func New(text string) Tree {
 	return &tree{
 		text:  text,
 		items: []Tree{},
