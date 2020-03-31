@@ -7,10 +7,10 @@ import (
 
 const (
 	newLine      = "\n"
-	emptySpace   = "    "
-	middleItem   = "├── "
-	continueItem = "│   "
-	lastItem     = "└── "
+	emptySpace   = "  "
+	middleItem   = "├ "
+	continueItem = "│ "
+	lastItem     = "└ "
 )
 
 type (
@@ -38,7 +38,7 @@ type (
 )
 
 //New returns a new GoTree.Tree
-func New(text string) Tree {
+func New(text string, size int) Tree {
 	return &tree{
 		text:  text,
 		items: []Tree{},
